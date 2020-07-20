@@ -92,7 +92,7 @@ data "aws_iam_policy_document" "eks_service_role" {
   }
 }
 
-resource "aws_iam_role" "eks_iam_rbac" {
-  assume_role_policy = data.aws_iam_policy_document.eks_service_role.json
-  name               = "eks_cluster"
-}
+#resource "aws_iam_role" "eks_iam_rbac" {
+#  assume_role_policy = data.aws_iam_policy_document.eks_service_role.json
+#  name               = "eks_cluster"
+#}
